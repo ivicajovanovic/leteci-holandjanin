@@ -10,6 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "fence": "node scripts/assert-design-fence.mjs",
+    "fence:selftest": "node scripts/assert-design-fence.mjs --self-test",
+    "ci": "npm run fence:selftest && npm run fence && npm run check && npm run build",
     "astro": "astro"
   },
   "dependencies": {

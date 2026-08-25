@@ -40,4 +40,4 @@ Adjunct skills in this repo were extracted surgically. These defaults from elsew
 
 ## Locked after brief
 
-Until `design-plan.md` status is `LOCKED`, do not choose a font pair, accent hue, rupture angle, or baseline unit in production code. Token files may contain the fixed black / white / structural gray only.
+Until `design-plan.md` status is `LOCKED`, do not choose a font pair, accent hue, rupture angle, or baseline unit in production code. Token files may contain the fixed black / white / structural gray only. Leaks in `src/` and `public/` (Inter, cream canvas, radius, two accents, a sketched hero before lock) fail `npm run fence` and CI.

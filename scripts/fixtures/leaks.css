@@ -1,0 +1,13 @@
+/* Fixture for fence --self-test. Must trip multiple rules. Not shipped. */
+
+body {
+  font-family: Inter, "Source Serif 4", sans-serif;
+  background: #F2F0EA;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  @apply rounded-2xl hover:scale-105 from-purple-500;
+  color: #8B5CF6;
+}

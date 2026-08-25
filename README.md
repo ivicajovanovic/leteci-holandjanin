@@ -91,6 +91,7 @@ design/sources/     dva nepromenljiva zakona
 design/             glas, intenzitet, ševron, provenance, konflikti
 design-plan.md      katanac projekta (sada prazan)
 docs/checklists/    a11y, CWV, preflight, Dutch enforcement
+docs/canon/         kanonski fragment (ovo jeste / ovo nije)
 docs/specs/         brifovi stranica posle brifa sajta
 src/pages/          rute
 src/layouts/        RootLayout
@@ -108,9 +109,9 @@ Potreban je Node ≥ 22.12.
 ```sh
 npm install
 npm run dev      # http://localhost:4321
+npm run fence    # mašinska zabrana (Inter, radius, hero pre lock)
 npm run check    # astro check
-npm run build    # dist/
-npm run preview
+npm run ci       # fence + check + build (isto radi GitHub Actions)
 ```
 
 ---

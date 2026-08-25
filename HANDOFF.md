@@ -30,16 +30,15 @@ The name is the brief for the visual lineage (Dutch, motion), not a product bran
 
 `design-plan.md` status is **`AWAITING_BRIEF`**.
 
-Until it is `LOCKED` you must **not**:
+Until `design-plan.md` is `LOCKED` you must **not** pick identity or add production UI. The freeze is enforced by `npm run fence` and GitHub Actions, not by prose alone.
 
-- pick a font pair, accent hue, rupture angle, or baseline unit
-- build production pages, sections, or branded components
-- copy Inter, Source Serif, cream canvas (`#F2F0EA`), pills, or a second brand hue from the Gen-AI *reference* theme
-- treat the holding page as a design to extend
+**Allowed without lock:** `design/`, `docs/`, `scripts/`, `.github/`, `.cursor/`, agent markdown, token stubs, `RootLayout.astro`, `src/pages/index.astro`, content schemas/holding entries.
 
-You **may**: structure, schemas, agent docs, and the waiting page only if they add no identity.
+**Forbidden without lock:** any `.astro` / island under `src/components/`, any extra route under `src/pages/`. A sketched hero fails CI. Filling `HANDOFF.md` does not.
 
 Owner will send the **site brief** later. First action after the brief: fill and lock `design-plan.md` from `design/templates/design-plan.md`. Then page briefs in `docs/specs/`. Then UI.
+
+Method canon (imitate this, not a template site): `docs/canon/this-is.html` and `docs/canon/this-is.png`. Bans: `docs/canon/THIS-IS-NOT.md`.
 
 ---
 
@@ -65,7 +64,8 @@ The holding page is `lang="sr"` because it is owner-facing, like the README. Tha
 4. `design/sources/anti-slop-dutch-design.md` (form)
 5. `design/sources/gen-ai-web-design-style-kit.md` (behavior)
 6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as needed
-7. Project skill: `.cursor/skills/design-led-build/SKILL.md`
+7. `docs/canon/this-is.html` (and `this-is.png` if you can see images)
+8. Project skill: `.cursor/skills/design-led-build/SKILL.md`
 
 ---
 
@@ -74,8 +74,8 @@ The holding page is `lang="sr"` because it is owner-facing, like the README. Tha
 - No-Cripple-MVP: every interactive state on first pass (`default`, `hover`, `focus`, `focus-visible`, `active`, `disabled`, `loading`, `error`, `empty`). No “a11y later”.
 - Semantic HTML. `rounded-none`. Visible grid before rupture. At least one planned rupture per major section once building.
 - Numbers sourced or labelled `SAMPLE DATA`.
-- Skip Inter, serifs, purple AI chrome, identical 3-card grids, `scale-105`, fade-in-up, emoji-as-icon, fake urgency.
-- Checklists before “done”: `docs/checklists/design-preflight.md`, `dutch-enforcement.md`, `a11y-wcag-22.md`, `cwv-astro.md`.
+- Skip Inter, serifs, purple AI chrome, identical 3-card grids, `scale-105`, fade-in-up, emoji-as-icon, fake urgency. Enforced in `src/` and `public/` by `npm run fence`.
+- Checklists before “done”: `docs/checklists/design-preflight.md`, `dutch-enforcement.md`, `a11y-wcag-22.md`, `cwv-astro.md`. CI runs fence + `astro check` + build on every push.
 
 ---
 
@@ -94,7 +94,8 @@ src/components/
   sections/         no JS
   islands/          client:* only
 src/styles/tokens/  black / white / structural gray only; accent and type unlocked
-src/content/        collections (pages, copy) — empty until brief
+src/content/        collections (holding entries only, for now)
+docs/canon/         method fragment to imitate
 .cursor/            rules and skills
 ```
 
@@ -107,9 +108,10 @@ Node ≥ 22.12.
 ```sh
 npm install
 npm run dev      # http://localhost:4321
+npm run fence    # Dutch / Gen-AI machine bans + freeze
 npm run check
 npm run build
-npm run preview
+npm run ci       # fence self-test + fence + check + build
 ```
 
 Astro 7 background server, if used: `astro dev --background` then `astro dev stop` / `status` / `logs`.
@@ -126,7 +128,7 @@ Do not leave a leftover process on 4321.
 4. Implement Astro-first. Islands only with a reason.
 5. Run the four checklists. Do not claim Core Web Vitals without a measurement.
 
-There is no golden visual example in the repo yet. Do not substitute a generic Awwwards clone. Execute the locked plan against the Dutch forbidden/mandatory tables.
+There is a method canon in `docs/canon/`. Imitate that fragment. Do not substitute a generic Awwwards clone. Execute the locked plan against the Dutch forbidden/mandatory tables. CI must stay green.
 
 ---
 

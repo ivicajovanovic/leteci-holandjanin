@@ -17,6 +17,7 @@ Start here after `HANDOFF.md`. Design-led Astro site. Two source files are law. 
 4. `design/sources/anti-slop-dutch-design.md` (form)
 5. `design/sources/gen-ai-web-design-style-kit.md` (behavior, a11y 2.2, CWV, AI, copy for chrome)
 6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as relevant
+7. `docs/canon/this-is.html`
 
 ## Precedence
 
