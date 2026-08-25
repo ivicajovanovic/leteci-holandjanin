@@ -1,7 +1,7 @@
 /* Generation AI semantic roles mapped onto Dutch values.
-   action / context / focus stay unset until the accent is locked.
-   success / warning / error must not introduce a second brand hue —
-   pair text + iconography with black/white/structural until the plan says otherwise. */
+   action / context / focus stay unset until chromas are locked.
+   success / warning / error must not introduce a hue outside the locked
+   micro-palette — pair text + iconography with black/white/structural until the plan says otherwise. */
 
 :root {
   --canvas: var(--white);

@@ -1,11 +1,11 @@
 # Accessibility — WCAG 2.2 AA
 
-Floor: Generation AI kit §17, plus Dutch semantic HTML and accent `:focus-visible`. Target **WCAG 2.2 Level AA**.
+Floor: Generation AI kit §17, plus Dutch semantic HTML and chroma `:focus-visible`. Target **WCAG 2.2 Level AA**.
 
 ## Before marking UI done
 
 - [ ] Contrast: 4.5:1 normal text, 3:1 large text and essential graphics
-- [ ] Focus visible and unobscured; 2px accent outline, 2px offset
+- [ ] Focus visible and unobscured; 2px chroma outline, 2px offset
 - [ ] Full keyboard path; DOM order planned if it diverges from visual order
 - [ ] Native elements first; ARIA only when HTML is insufficient
 - [ ] Touch targets ≥ 44×44px

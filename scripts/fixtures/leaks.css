@@ -8,6 +8,7 @@ body {
 }
 
 .hero {
-  @apply rounded-2xl hover:scale-105 from-purple-500;
+  @apply rounded-2xl hover:scale-105 from-purple-500 rotate-3;
   color: #8B5CF6;
+  --accent-signal: #ff2a00;
 }

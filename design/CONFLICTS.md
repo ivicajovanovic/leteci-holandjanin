@@ -19,11 +19,11 @@ Read this before writing any page, component, token, or copy.
 
 | Concern | Dutch | Generation AI kit | Decision |
 |---|---|---|---|
-| Typefaces | Four grotesk-only pairings. No serif. | Interface / Voice / Evidence roles. Reference: Inter, Source Serif 4, IBM Plex Mono. | **Dutch faces.** Map Voice → display grotesk, Interface → body grotesk, Evidence → tabular figures from the body face. Monospace only for real code or tabular data. |
-| Color values | `#000000` / `#FFFFFF` / `#E5E5E5` + exactly one accent. | Richer reference theme including cream canvas and a second “context” blue. | **Dutch values.** Map Gen-AI role *names* onto those values. Never ship `#F2F0EA` cream, Inter, or a second brand hue. |
+| Typefaces | One lineage grotesk family (Helvetica/Neue Haas Grotesk, Univers, Futura, or a named system face) for mark, display, and body. No serif. | Interface / Voice / Evidence roles. Reference: Inter, Source Serif 4, IBM Plex Mono. | **Dutch family.** Map Voice / Interface / Evidence onto weights of that one family. Monospace only for real code or tabular data. |
+| Color values | Near-black `#141414` / off-white `#F3F3EE` inversion pair + at most two print emphasis chromas (soft red, kiwi, dark yellow, orange, grass green). | Richer reference theme including cream canvas and a second “context” blue. | **Dutch values.** Map Gen-AI role *names* onto the inversion pair. Never ship `#F2F0EA` cream, `#000000`/`#FFFFFF` as the fields, Inter, purple, or a third chroma. |
 | Radius | `rounded-none` unconditional. | `0 / 4 / 12 / 999`. | **Dutch.** Controls stay square. No pills. |
 | Motion curve | Spring / overshoot `cubic-bezier(0.34, 1.56, 0.64, 1)`. | `ease-ui` / intensity modes / reduced motion. | **Dutch curve** in `expressive` and `immersive`. **Gen-AI intensity + `prefers-reduced-motion`** always. In `quiet`, spring is for state feedback only, not rupture theater. |
-| Grid / rupture | Legible grid, planned rupture. | Stable structure, local expression. | Aligned. Rupture is the local expression. Navigation and forms stay stable. |
+| Grid / rupture | Invisible packing. Field inversion + 90° type as dynamics. Generating rule on top. No 45° marks unless the owner asks. | Stable structure, local expression. | Aligned. Inversion is expressive/immersive. Quiet stays on one field. Do not draw the grid. |
 | Cards | Ban identical 3-card grids. | Ban card soup. | Aligned. Content objects, not cards. |
 | Accessibility | WCAG 2.1 AA. | WCAG 2.2 AA, 44×44 targets. | **2.2 AA.** |
 | Fake metrics / urgency | Banned. | Banned. | Aligned. Label illustrative numbers `SAMPLE DATA`. |
@@ -33,11 +33,11 @@ Read this before writing any page, component, token, or copy.
 
 Adjunct skills in this repo were extracted surgically. These defaults from elsewhere are **void** here:
 
-- “No bounce / elastic easing” → Dutch **requires** a slight overshoot.
-- “Tinted neutrals / cream paper” → Dutch uses absolute black and paper white.
-- “Space Grotesk is a banned personality default” → Space Grotesk is **legal only** as Dutch pairing 4 (Space Grotesk Bold + Neue Montreal Regular), chosen in `design-plan.md`, not as a reflex.
+- “No bounce / elastic easing” → Dutch **requires** a slight overshoot on Dumbar/DEPT surfaces and for UI state feedback. Jetset-led compositions stay still.
+- “Tinted neutrals / cream paper” → Dutch uses **off-white** (`#F3F3EE` stub) and **near-black** (`#141414`), not Gen-AI cream `#F2F0EA` and not `#000`/`#FFF` digital void.
+- “Space Grotesk is a banned personality default” → remains banned as a fashion pair. Lineage faces only (Section 3 of the Dutch source).
 - shadcn / pill UI / Inter stacks → not this project.
 
 ## Locked after brief
 
-Until `design-plan.md` status is `LOCKED`, do not choose a font pair, accent hue, rupture angle, or baseline unit in production code. Token files may contain the fixed black / white / structural gray only. Leaks in `src/` and `public/` (Inter, cream canvas, radius, two accents, a sketched hero before lock) fail `npm run fence` and CI.
+Until `design-plan.md` status is `LOCKED`, do not choose a type family, emphasis chroma, generating rule, or baseline unit in production code. Token files may contain the inversion pair (near-black / off-white) and structural gray only. Leaks in `src/` and `public/` (Inter, Gen-AI cream hexes, radius, retired neon accent menu, cute 3° tilt, a sketched hero before lock) fail `npm run fence` and CI.

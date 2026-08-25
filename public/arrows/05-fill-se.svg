@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Switcher arrow south-east, filled</title>
+  <g fill="currentColor">
+    <path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/>
+  </g>
+</svg>

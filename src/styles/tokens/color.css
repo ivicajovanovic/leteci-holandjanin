@@ -1,13 +1,13 @@
-/* Fixed Dutch core. Accent is not defined until design-plan.md is LOCKED. */
+/* Fixed Dutch inversion pair. Emphasis chromas are not defined until design-plan.md is LOCKED. */
 
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: #141414;
+  --white: #f3f3ee;
   --structural: #e5e5e5;
 }
 
 @theme {
-  --color-black: #000000;
-  --color-white: #ffffff;
+  --color-black: #141414;
+  --color-white: #f3f3ee;
   --color-structural: #e5e5e5;
 }

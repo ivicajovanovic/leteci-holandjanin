@@ -30,7 +30,7 @@ Start here after `HANDOFF.md`. Design-led Astro site. Two source files are law. 
 - No production component before a locked `design-plan.md`.
 - No-Cripple-MVP: every state on first pass. No “add a11y later”.
 - Astro default is zero client JS. Islands live in `src/components/islands/` and need a reason.
-- `rounded-none`. Grotesk-only. One accent. No Inter, no serif, no cream canvas, no purple AI glow.
+- `rounded-none`. Grotesk-only. One lineage family. Near-black / off-white inversion. ≤2 print emphasis chromas. Invisible packing. Type 0°/90°. No Inter, no serif, no Gen-AI cream, no purple AI glow, no 3° tilt.
 - Numbers are sourced or labelled `SAMPLE DATA`.
 
 ## Skills

@@ -20,7 +20,7 @@ Golden PNGs are **not in the repo yet**. Do not invent a substitute canon. When 
 
 Optional, not blocking: `actions/checkout@v4` and `actions/setup-node@v4` still emit a GitHub annotation that those action versions run on deprecated Node 20. Bump majors when convenient. That is not a CI failure.
 
-Do not start production UI. Freeze below still holds.
+Dutch source law was **tightened** (2026-08-25) toward Jetset/Dumbar primary practice: packing grid is invisible; type 0°/90° only (no 45° marks, striping, stamps, or rotated chevrons unless the owner asks); one lineage family; **field inversion** (off-white ↔ near-black) plus 90° type as dynamics; emphasis from soft red / kiwi / dark yellow / orange / grass green (≤2); print grain; rupture is a generating rule, not a chevron quota. Retired neon menu, `#000`/`#FFF` as fields, and 3° tilt are out. Freeze below still holds.
 
 ---
 
@@ -30,7 +30,7 @@ A design-led website **operating system**, not a finished site and not a UI kit.
 
 Three layers, all required:
 
-1. **Form (law):** Dutch Design — Experimental Jetset × Studio Dumbar. Grotesk-only, black/white/one accent, `rounded-none`, grid then planned rupture, spring/overshoot motion. File: `design/sources/anti-slop-dutch-design.md`.
+1. **Form (law):** Dutch Design — Experimental Jetset × Studio Dumbar. Grotesk-only, one lineage family, **near-black / off-white inversion** (not `#000`/`#FFF`), at most two print emphasis chromas (soft red, kiwi, dark yellow, orange, grass green), `rounded-none`, invisible packing, 90° type on inverted fields, print grain. Wayfinding: owner switcher arrows in `public/arrows/` (45° only inside the path). File: `design/sources/anti-slop-dutch-design.md`. Do not blend the two studios into a visible Swiss grid + 3° tilt.
 2. **Behavior (law):** Generation AI *Controlled Intensity*. Intensity modes, agency, provenance, WCAG 2.2 AA, Core Web Vitals, no dark patterns, AI is a capability not a glow. File: `design/sources/gen-ai-web-design-style-kit.md`.
 3. **Implementation:** Astro 7, TypeScript strict, Tailwind 4. Zero client JS by default. Islands only in `src/components/islands/` with a written reason.
 
@@ -86,7 +86,7 @@ The holding page is `lang="sr"` because it is owner-facing, like the README. Tha
 ## Hard gates
 
 - No-Cripple-MVP: every interactive state on first pass (`default`, `hover`, `focus`, `focus-visible`, `active`, `disabled`, `loading`, `error`, `empty`). No “a11y later”.
-- Semantic HTML. `rounded-none`. Visible grid before rupture. At least one planned rupture per major section once building.
+- Semantic HTML. `rounded-none`. Invisible packing grid. Generating rule named in the plan. Type at 0°/90° only.
 - Numbers sourced or labelled `SAMPLE DATA`.
 - Skip Inter, serifs, purple AI chrome, identical 3-card grids, `scale-105`, fade-in-up, emoji-as-icon, fake urgency. Enforced in `src/` and `public/` by `npm run fence`.
 - Checklists before “done”: `docs/checklists/design-preflight.md`, `dutch-enforcement.md`, `a11y-wcag-22.md`, `cwv-astro.md`. CI runs fence + `astro check` + build on every push.
@@ -107,9 +107,9 @@ src/components/
   primitives/       no JS
   sections/         no JS
   islands/          client:* only
-src/styles/tokens/  black / white / structural gray only; accent and type unlocked
+src/styles/tokens/  near-black / off-white inversion pair + structural gray; emphasis chromas and type unlocked
 src/content/        collections (holding entries only, for now)
-public/             dutch-1.png, dutch-2.png, dutch-3.png (golden examples, owner-made)
+public/             dutch-1.png, dutch-2.png, dutch-3.png (golden examples, owner-made); arrows/ (switcher SVGs)
 .cursor/            rules and skills
 ```
 
@@ -137,8 +137,8 @@ Do not leave a leftover process on 4321.
 
 ## After the brief (do this, in order)
 
-1. Lock `design-plan.md` (pairing, one accent, grid, type math, rupture, motion, states, data honesty, **product locale**).
-2. Delete the two unused accent options from CSS `@theme`. Wire Voice/Interface faces locally, subsetted.
+1. Lock `design-plan.md` (one lineage family, inversion pair, ≤2 print emphasis chromas, packing grid, angle lock, field inversion map, generating rule, type math, motion, states, data honesty, **product locale**).
+2. Wire the one lineage family locally, subsetted. Map Voice/Interface/Evidence onto weights of that family. Lock ≤2 chroma hexes into `@theme`. Do not wire the retired Signal/Cobalt/Circuit menu.
 3. Write page briefs in `docs/specs/` from `design/templates/`.
 4. Implement Astro-first. Islands only with a reason.
 5. Run the four checklists. Do not claim Core Web Vitals without a measurement.

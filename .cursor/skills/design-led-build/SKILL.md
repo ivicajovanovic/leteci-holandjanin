@@ -17,7 +17,7 @@ description: Orchestrates design-led Astro implementation for this repo. Use whe
 - Tokens only. No magic pixels. `rounded-none`.
 - Semantic HTML. Astro components in `primitives/` or `sections/`. Islands only in `islands/` with a written reason.
 - Intensity via `data-intensity`. Quiet for forms, payment, permissions.
-- Rupture is planned. Grid stays legible.
+- Rupture is the generating rule firing. Packing stays invisible. Expressive pages invert fields; 90° type rides them. Quiet stays on one field.
 - States: default, hover, focus, focus-visible, active, disabled, loading, error, empty.
 - Copy: `design/voice.md`. Chevrons: `design/chevron-system.md`.
 

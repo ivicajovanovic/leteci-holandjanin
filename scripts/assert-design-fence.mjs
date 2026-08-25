@@ -39,12 +39,12 @@ const FORBIDDEN = [
   {
     id: 'banned-face',
     re: /\bInter\b|\bRoboto\b|\bOpen Sans\b|\bComic Sans\b|\bSource Serif\b|\bPlayfair\b|\bFraunces\b|\bCormorant\b|\bInstrument Serif\b|\bIBM Plex\b/i,
-    msg: 'Banned typeface. After lock, use exactly one Dutch grotesk pair.',
+    msg: 'Banned typeface. After lock, use exactly one Dutch lineage grotesk family.',
   },
   {
     id: 'cream-canvas',
     re: /#F2F0EA|#FAFAF7|#F4F1EA|#F5F0E8/i,
-    msg: 'Cream/paper canvas from the Gen-AI reference theme. Dutch canvas is #FFFFFF.',
+    msg: 'Cream/paper canvas from the Gen-AI reference theme. Dutch field is off-white (#F3F3EE stub), not those hexes.',
   },
   {
     id: 'tailwind-radius',
@@ -77,9 +77,14 @@ const FORBIDDEN = [
     msg: 'Purple/violet AI-cliché chroma.',
   },
   {
-    id: 'accent-token-triplet',
-    re: /accent-signal[\s\S]{0,200}accent-cobalt|accent-cobalt[\s\S]{0,200}accent-circuit/i,
-    msg: 'More than one accent option wired. Keep one; delete the other two.',
+    id: 'old-accent-menu',
+    re: /accent-signal|accent-circuit|accent-cobalt|#FF2A00|#FF6600/i,
+    msg: 'Retired neon accent menu. Lock a micro-palette from the brief (≤2 chromas).',
+  },
+  {
+    id: 'cute-tilt',
+    re: /rotate-(1|2|3|6|12|45)\b|rotate-\[-?(3|4|6|12|45)deg\]|\b-?[34]deg\b|\b-?45deg\b/,
+    msg: 'Illegal layout angle. Type is 0° or 90°. Switcher arrows already contain their diagonal — do not CSS-rotate.',
   },
   {
     id: 'ijekavian',
@@ -162,7 +167,7 @@ function selfTest() {
   const fixture = readFileSync(join(ROOT, 'scripts/fixtures/leaks.css'), 'utf8');
   const hits = scanText(fixture, 'scripts/fixtures/leaks.css');
   const ids = new Set(hits.map((h) => h.id));
-  const required = ['banned-face', 'cream-canvas', 'tailwind-radius', 'scale-hover', 'purple-ai'];
+  const required = ['banned-face', 'cream-canvas', 'tailwind-radius', 'scale-hover', 'purple-ai', 'old-accent-menu', 'cute-tilt'];
   const missing = required.filter((id) => !ids.has(id));
   if (missing.length > 0) {
     console.error(`fence self-test failed; missed: ${missing.join(', ')}`);
@@ -204,11 +209,11 @@ function main() {
     }
 
     const tokenCss = readFileSync(join(ROOT, 'src/styles/tokens/color.css'), 'utf8');
-    if (/--(?:color-)?accent\s*:\s*#/.test(tokenCss)) {
+    if (/--(?:color-)?(?:accent|chroma-[ab])\s*:\s*#/.test(tokenCss)) {
       errors.push({
         file: 'src/styles/tokens/color.css',
         id: 'accent-before-lock',
-        msg: 'Accent hex is set before design-plan.md is LOCKED.',
+        msg: 'Chroma hex is set before design-plan.md is LOCKED.',
       });
     }
   }

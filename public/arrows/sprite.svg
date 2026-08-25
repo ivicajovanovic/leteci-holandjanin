@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="outline-se" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2.25" stroke-linejoin="miter" stroke-miterlimit="4"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g>
+  </symbol>
+  <symbol id="fill-se" viewBox="0 0 64 64">
+    <g fill="currentColor"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g>
+  </symbol>
+  <symbol id="outline-ne" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2.25" stroke-linejoin="miter" stroke-miterlimit="4"><g transform="translate(0,64)"><g transform="scale(1,-1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+  <symbol id="fill-ne" viewBox="0 0 64 64">
+    <g fill="currentColor"><g transform="translate(0,64)"><g transform="scale(1,-1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+  <symbol id="outline-sw" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2.25" stroke-linejoin="miter" stroke-miterlimit="4"><g transform="translate(64,0)"><g transform="scale(-1,1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+  <symbol id="fill-sw" viewBox="0 0 64 64">
+    <g fill="currentColor"><g transform="translate(64,0)"><g transform="scale(-1,1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+  <symbol id="outline-nw" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="2.25" stroke-linejoin="miter" stroke-miterlimit="4"><g transform="translate(64,64)"><g transform="scale(-1,-1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+  <symbol id="fill-nw" viewBox="0 0 64 64">
+    <g fill="currentColor"><g transform="translate(64,64)"><g transform="scale(-1,-1)"><path d="M 8 8 L 42 8 L 42 16 L 21.657 16 L 54.426 48.77 L 48.77 54.426 L 16 21.657 L 16 42 L 8 42 Z"/></g></g></g>
+  </symbol>
+</svg>

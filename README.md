@@ -2,7 +2,7 @@
 
 Dizajn-vođeni veb sajt. Još nije brendiran proizvod: ovo je **operativni sistem** po kome se sajt gradi — vizuelni zakon, pravila ponašanja, i Astro kostur — pre nego što stigne brif stranica.
 
-**Status:** `design-plan.md` je `AWAITING_BRIEF`. Font, akcent i ruptura nisu izabrani. Produkcijski UI se ne piše dok plan nije `LOCKED`.
+**Status:** `design-plan.md` je `AWAITING_BRIEF`. Porodica pisma, hrome i generating rule nisu izabrani. Produkcijski UI se ne piše dok plan nije `LOCKED`.
 
 Repozitorijum: [ivicajovanovic/leteci-holandjanin](https://github.com/ivicajovanovic/leteci-holandjanin)
 
@@ -22,13 +22,13 @@ Za agenta (engleski): [`HANDOFF.md`](HANDOFF.md).
 
 Ovo nije šablon, nije UI kit sa dugmadima, i nije „vibe coding“ folder. Tri sloja rade zajedno:
 
-1. **Vizuelni zakon — Dutch Design** (Experimental Jetset × Studio Dumbar). Mreža je ulaznica, ruptura je poenta: grotesk tipografija, crno/belo + tačno jedan akcent, oštri uglovi, planirani prelazi preko kolona. Zabranjuje generički AI slop (Inter, serif, krem platno, identične kartice, `scale-105`, lažne metrike).
+1. **Vizuelni zakon — Dutch Design** (Experimental Jetset × Studio Dumbar). Grotesk, jedna porodica za znak i tekst, **inverzija polja** (off-white ↔ skoro-crno), najviše dve print-hrome za naglasak (meka crvena, kiwi, tamno žuta, oranž, trava), oštri uglovi, nevidljivi packing grid, slova na 0°/90° na invertovanim poljima, sito/raster na slici. Zabranjuje generički AI slop (Inter, serif, krem platno iz Gen-AI kita, identične kartice, `scale-105`, nagnute rečenice od 3°, lažne metrike).
 2. **Zakon ponašanja — Controlled Intensity** (Generation AI style kit). Jedna dominantna namera po kontekstu. Forme, plaćanje i dozvole ostaju `quiet`. AI je sposobnost, ne ljubičasti sjaj. WCAG 2.2 AA. Core Web Vitals. Bez lažne hitnosti.
 3. **Implementacija — [Astro](https://astro.build)** 7, TypeScript, Tailwind 4. Podrazumevano nula klijentskog JavaScript-a. Ostrva (`client:*`) samo kad HTML/CSS ne mogu da obave interakciju.
 
 Kad se prva dva zakona raziđu, forma pobeđuje Dutch, ponašanje i usklađenost pobeđuju Generation AI kit. Tabela je u [`design/CONFLICTS.md`](design/CONFLICTS.md).
 
-Ime *Leteći Holanđanin* nije slučajno: vizuelni jezik je holandski dizajn; sajt treba da se kreće (mreža, ševroni, fizika prelaza), a ne da stoji kao korporativni plakat.
+Ime *Leteći Holanđanin* nije slučajno: vizuelni jezik je holandski dizajn; sajt treba da se kreće kad Dumbar vodi (oznake, fizika prelaza), a da ostane štampa-objekt kad vodi Jetset — ne da stoji kao korporativni plakat, i ne da crta švajcarski raster.
 
 ---
 
@@ -36,12 +36,12 @@ Ime *Leteći Holanđanin* nije slučajno: vizuelni jezik je holandski dizajn; sa
 
 Pre bilo kog produkcijskog HTML/CSS/komponente postoji **design plan** (`design-plan.md`). Zaključava:
 
-- tačno jedan od četiri odobrena grotesk para
-- tačno jedan akcent (signal crvena, kobalt, ili circuit narandžasta)
-- kolone, gutere, baseline jedinicu
+- tačno jednu lineage grotesk porodicu (znak, naslov i body)
+- mikro-paletu: inverzija near-black/off-white + najviše dve hrome iz porodice meka crvena / kiwi / tamno žuta / oranž / trava
+- kolone, gutere, baseline jedinicu (packing, ne crtan raster)
 - matematiku tipa (`clamp`, modularna skala)
-- strategiju rupture (ugao rotacije, bleed, ševroni)
-- potpis pokreta (overshoot spring)
+- generating rule (šta pravi rupturu), angle lock 0/90, print grain
+- potpis pokreta (overshoot spring na Dumbar/DEPT površinama)
 - mašine stanja za svaki interaktivni element
 - izjavu o poštenju podataka (`SAMPLE DATA` ako broj nije izvor)
 

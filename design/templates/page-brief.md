@@ -20,10 +20,12 @@ Bind to `/design-plan.md`. Do not introduce new type, color, or motion.
 
 ## Rupture on this page
 
-- Oversized type object:
-- Rotation (must use the locked angle):
-- Chevron referents:
-- Collage:
+- Word- or sentence-as-object:
+- 90° type on inverted fields:
+- Field inversion (which sections flip):
+- Generating rule application:
+- Print grain / silkscreen / overprint:
+- Switcher arrow (file + referent, or page-scale object):
 
 ## Content sources
 
@@ -37,8 +39,8 @@ Empty, error, loading, offline, reduced-motion.
 ## Acceptance
 
 - [ ] One dominant intention
-- [ ] Grid legible before rupture
+- [ ] Packing felt (not drawn); generating rule applied
 - [ ] No card soup / no centered marketing stack
 - [ ] WCAG 2.2 AA
-- [ ] Keyboard path + `:focus-visible` in accent
+- [ ] Keyboard path + `:focus-visible` in a locked chroma
 - [ ] No JS island unless this page proves it needs one
