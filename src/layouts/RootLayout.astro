@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import type { IntensityMode } from '../lib/intensity';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: string;
+  intensity?: IntensityMode;
+}
+
+const { title, description, lang = 'hr', intensity = 'quiet' } = Astro.props;
+const hasHeader = Astro.slots.has('header');
+const hasFooter = Astro.slots.has('footer');
+---
+
+<!doctype html>
+<html lang={lang} data-intensity={intensity}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#sadrzaj">Preskoči na sadržaj</a>
+    {hasHeader && (
+      <header>
+        <slot name="header" />
+      </header>
+    )}
+    <main id="sadrzaj">
+      <slot />
+    </main>
+    {hasFooter && (
+      <footer>
+        <slot name="footer" />
+      </footer>
+    )}
+  </body>
+</html>

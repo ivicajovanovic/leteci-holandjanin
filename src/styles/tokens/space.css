@@ -1,0 +1,17 @@
+/* Baseline unit and modular spacing lock in design-plan.md.
+   Generation AI kit scale (4–160) is the allowed set once the unit is chosen. */
+
+:root {
+  --space-scale: 4 8 12 16 24 32 48 64 96 128 160;
+}
+
+@theme {
+  --radius-none: 0px;
+  --radius: 0px;
+  --shadow-hard: 2px 2px 0 0 currentColor;
+  --shadow-hard-lg: 4px 4px 0 0 currentColor;
+  --z-base: 0;
+  --z-sticky: 30;
+  --z-overlay: 50;
+  --z-skip: 80;
+}

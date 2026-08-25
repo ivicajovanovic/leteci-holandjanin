@@ -1,0 +1,12 @@
+---
+description: Zero client JS by default. Islands are exceptions with a stated reason.
+globs: "**/*.{astro,tsx,jsx,vue,svelte}"
+alwaysApply: false
+---
+
+# Islands
+
+- Default output is HTML/CSS. Put `client:*` components in `src/components/islands/`.
+- Weakest directive that works. No `client:load` for below-fold UI.
+- No barrel imports. No client fetch for LCP content.
+- Fonts local after lock. Images reserve dimensions.

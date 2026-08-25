@@ -1,0 +1,10 @@
+/* Type pairing and clamp scale are unlocked until design-plan.md is LOCKED.
+   Waiting surfaces may use the UA sans stack. Production Voice/Interface
+   faces must be one approved grotesk pair, locally hosted and subsetted. */
+
+:root {
+  --font-voice: ui-sans-serif, system-ui, sans-serif;
+  --font-interface: ui-sans-serif, system-ui, sans-serif;
+  --font-evidence: ui-sans-serif, system-ui, sans-serif;
+  --measure: 65ch;
+}

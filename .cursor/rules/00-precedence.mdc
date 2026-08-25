@@ -1,0 +1,15 @@
+---
+description: Design-led precedence, hard gates, and read order for every session.
+alwaysApply: true
+---
+
+# Precedence
+
+1. `design-plan.md` must be `LOCKED` before production UI.
+2. Form: `design/sources/anti-slop-dutch-design.md`
+3. Behavior: `design/sources/gen-ai-web-design-style-kit.md`
+4. Ties: `design/CONFLICTS.md` (Dutch = form, Gen-AI = behavior/compliance)
+
+No third aesthetic. No Inter, serif, cream canvas, purple glow, rounded cards, or fake metrics.
+
+Follow `.cursor/skills/design-led-build/SKILL.md` for any visible UI.

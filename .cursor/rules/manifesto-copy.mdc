@@ -1,0 +1,13 @@
+---
+description: Manifesto voice for page copy and UI microcopy.
+globs: "**/*.{md,mdx,astro}"
+alwaysApply: false
+---
+
+# Copy
+
+Follow `design/voice.md`. Specific, dry, honest. Verbs for actions.
+
+Forbidden: supercharge, seamless, unleash, all-in-one, Learn more, fake metrics, emoji icons, false urgency.
+
+Unsourced numbers get `SAMPLE DATA` or they do not ship.

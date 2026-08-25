@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "./tokens/color.css";
+@import "./tokens/type.css";
+@import "./tokens/space.css";
+@import "./tokens/motion.css";
+@import "./tokens/semantic.css";
+
+*,
+*::before,
+*::after {
+  border-radius: 0;
+}
+
+html {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-interface);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  font-family: var(--font-voice);
+}
+
+p {
+  text-wrap: pretty;
+  max-width: var(--measure);
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  z-index: 80;
+  transform: translateY(-100%);
+  padding: 0.75rem 1rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

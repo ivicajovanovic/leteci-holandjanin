@@ -1,0 +1,14 @@
+---
+description: Dutch Design visual law for rendered UI. Grotesk-only, one accent, rounded-none, grid then rupture.
+globs: "**/*.{astro,css,ts,tsx,js,jsx,svg}"
+alwaysApply: false
+---
+
+# Dutch Design form
+
+- Pairing and accent come only from locked `design-plan.md`.
+- `rounded-none`. Borders 1px structural or black. Hard offset shadow only, never blur.
+- At least one planned rupture per major section. Grid must stay readable.
+- Hover: inversion or chevron-axis translate. Never `scale-105` or fade-in-up.
+- Motion: `--ease-overshoot`. No mixed easings.
+- Semantic HTML. No card soup. No identical 3-up feature grids.
