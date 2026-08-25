@@ -5,8 +5,22 @@ You are an LLM coding agent landing in **Leteći Holanđanin** (`leteci-holandja
 If `design-plan.md` is not `LOCKED`, freeze visual identity. The owner will send the site brief; lock the plan before any production UI.
 
 Remote: https://github.com/ivicajovanovic/leteci-holandjanin  
-Local path: `/home/ivica1979/projekti/leteci-holandjanin`  
+Local path: `/home/ivica1979/projekti/leteci-holandjanin` (the old folder name `cijenik` is retired; Cursor may still show it — open this path)  
 Owner: speaks Serbian **ekavian**. Address the owner in that register. Agent docs, law, skills, and code comments stay **English**.
+
+---
+
+## Where we left off (2026-08-25)
+
+GitHub Actions on `main` is **green**: `npm ci`, fence self-test, fence, `astro check`, build.
+
+CI `npm ci` previously failed on missing optional `@emnapi/core` / `@emnapi/runtime` 1.11.3. Fix: regenerate `package-lock.json` and run Actions on Node **24** from `.nvmrc` (matches the lockfile machine). Do not pin CI to Node 20.
+
+Golden PNGs are **not in the repo yet**. Do not invent a substitute canon. When the owner drops `public/dutch-1.png`, `dutch-2.png`, `dutch-3.png`, add / commit / push when asked.
+
+Optional, not blocking: `actions/checkout@v4` and `actions/setup-node@v4` still emit a GitHub annotation that those action versions run on deprecated Node 20. Bump majors when convenient. That is not a CI failure.
+
+Do not start production UI. Freeze below still holds.
 
 ---
 
@@ -38,7 +52,7 @@ Until `design-plan.md` is `LOCKED` you must **not** pick identity or add product
 
 Owner will send the **site brief** later. First action after the brief: fill and lock `design-plan.md` from `design/templates/design-plan.md`. Then page briefs in `docs/specs/`. Then UI.
 
-Golden visual examples (owner-made, PNG): `public/dutch-1.png`, `public/dutch-2.png`, `public/dutch-3.png`. Look at them with vision. Do not invent a substitute fragment. Do not treat them as product pages.
+Golden visual examples (owner-made, PNG): `public/dutch-1.png`, `public/dutch-2.png`, `public/dutch-3.png`. They are expected, not present. Look at them with vision when they exist. Do not invent a substitute fragment. Do not treat them as product pages.
 
 ---
 
@@ -103,15 +117,16 @@ public/             dutch-1.png, dutch-2.png, dutch-3.png (golden examples, owne
 
 ## Commands
 
-Node ≥ 22.12.
+Node ≥ 22.12. Local and CI: **24** (`.nvmrc`).
 
 ```sh
-npm install
+npm ci           # after clone; do not hand-edit the lockfile
 npm run dev      # http://localhost:4321
 npm run fence    # Dutch / Gen-AI machine bans + freeze
+npm run fence:selftest
 npm run check
 npm run build
-npm run ci       # fence self-test + fence + check + build
+npm run ci       # selftest + fence + check + build (same as Actions)
 ```
 
 Astro 7 background server, if used: `astro dev --background` then `astro dev stop` / `status` / `logs`.
@@ -136,5 +151,5 @@ Look at `public/dutch-1.png`, `dutch-2.png`, `dutch-3.png`. Do not invent a repl
 
 - Open a second design direction (“a bit more editorial”, shadcn, Swiss-only, serif display).
 - Translate or paraphrase the two law files into a new spec that can drift.
-- Commit secrets. Push only when the owner asks (this session: owner asked).
+- Commit secrets. Push only when the owner asks.
 - Rename the project back to `cijenik`. That was a working folder name. The product/system name is Leteći Holanđanin.
