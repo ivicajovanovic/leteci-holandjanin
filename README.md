@@ -6,6 +6,8 @@ Dizajn-vođeni veb sajt. Još nije brendiran proizvod: ovo je **operativni siste
 
 Repozitorijum: [ivicajovanovic/leteci-holandjanin](https://github.com/ivicajovanovic/leteci-holandjanin)
 
+Za agenta (engleski): [`HANDOFF.md`](HANDOFF.md).
+
 ## Jezik
 
 | Sloj | Jezik |

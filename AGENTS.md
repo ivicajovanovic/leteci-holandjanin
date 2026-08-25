@@ -1,6 +1,6 @@
 # AGENTS
 
-Design-led Astro site. Two source files are law. Adjunct docs in `design/` are upgrades, not a third aesthetic.
+Start here after `HANDOFF.md`. Design-led Astro site. Two source files are law. Adjunct docs in `design/` are upgrades, not a third aesthetic.
 
 ## Language
 
@@ -11,11 +11,12 @@ Design-led Astro site. Two source files are law. Adjunct docs in `design/` are u
 
 ## Read order (every session that produces UI or copy)
 
-1. `design-plan.md` — if status is not `LOCKED`, do not implement visual identity. Scaffold and content architecture only.
-2. `design/CONFLICTS.md`
-3. `design/sources/anti-slop-dutch-design.md` (form)
-4. `design/sources/gen-ai-web-design-style-kit.md` (behavior, a11y 2.2, CWV, AI, copy for chrome)
-5. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as relevant
+1. `HANDOFF.md` — current freeze, what not to do
+2. `design-plan.md` — if status is not `LOCKED`, do not implement visual identity. Scaffold and content architecture only.
+3. `design/CONFLICTS.md`
+4. `design/sources/anti-slop-dutch-design.md` (form)
+5. `design/sources/gen-ai-web-design-style-kit.md` (behavior, a11y 2.2, CWV, AI, copy for chrome)
+6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as relevant
 
 ## Precedence
 

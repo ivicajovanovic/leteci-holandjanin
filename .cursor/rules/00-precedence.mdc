@@ -12,6 +12,6 @@ alwaysApply: true
 
 No third aesthetic. No Inter, serif, cream canvas, purple glow, rounded cards, or fake metrics.
 
-English for law and agents. Product locale only from locked `design-plan.md`. Serbian copy: ekavian only.
+Read `HANDOFF.md` first. English for law and agents. Product locale only from locked `design-plan.md`. Serbian copy: ekavian only.
 
 Follow `.cursor/skills/design-led-build/SKILL.md` for any visible UI.
