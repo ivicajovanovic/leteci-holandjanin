@@ -10,6 +10,7 @@ Law and adjuncts for this site. Not a second brand system.
 | `intensity-modes.md` | quiet / expressive / immersive |
 | `chevron-system.md` | Wayfinding SVG grammar |
 | `provenance.md` | Origin / verification disclosure |
+| `LANGUAGE.md` | English agent layer; Serbian ekavian README; product locale after brief |
 | `templates/` | design-plan, page brief, component, flow, copy context |
 
 Project lock lives at `/design-plan.md` (root), as required by Dutch Design §1.1.

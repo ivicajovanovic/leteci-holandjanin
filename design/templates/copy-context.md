@@ -18,6 +18,6 @@ Fill before writing page copy. Do not invent proof.
 
 ## Constraints
 
-- Language:
+- Language: must match `design-plan.md` product locale. Serbian = ekavian only.
 - Legal / pricing caveats:
 - AI-generated copy must be reviewed; provenance if origin matters.

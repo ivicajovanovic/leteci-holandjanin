@@ -5,11 +5,12 @@ import type { IntensityMode } from '../lib/intensity';
 interface Props {
   title: string;
   description?: string;
-  lang?: string;
+  lang: string;
+  skipLabel: string;
   intensity?: IntensityMode;
 }
 
-const { title, description, lang = 'hr', intensity = 'quiet' } = Astro.props;
+const { title, description, lang, skipLabel, intensity = 'quiet' } = Astro.props;
 const hasHeader = Astro.slots.has('header');
 const hasFooter = Astro.slots.has('footer');
 ---
@@ -25,13 +26,13 @@ const hasFooter = Astro.slots.has('footer');
     <title>{title}</title>
   </head>
   <body>
-    <a class="skip-link" href="#sadrzaj">Preskoči na sadržaj</a>
+    <a class="skip-link" href="#content">{skipLabel}</a>
     {hasHeader && (
       <header>
         <slot name="header" />
       </header>
     )}
-    <main id="sadrzaj">
+    <main id="content">
       <slot />
     </main>
     {hasFooter && (

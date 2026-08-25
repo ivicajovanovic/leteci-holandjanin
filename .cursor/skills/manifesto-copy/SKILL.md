@@ -5,7 +5,7 @@ description: Writes dry, specific, data-honest copy for this site. Use when draf
 
 # Manifesto copy
 
-Read `/design/voice.md` and fill `/design/templates/copy-context.md` first.
+Read `/design/voice.md`, `/design/LANGUAGE.md`, and fill `/design/templates/copy-context.md` first. Use the product locale from `design-plan.md`. If Serbian: ekavian only.
 
 ## Rules
 

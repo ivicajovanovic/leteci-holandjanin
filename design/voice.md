@@ -2,14 +2,16 @@
 
 Brand and marketing surfaces follow Dutch Design §2.3. UI chrome, forms, errors, and any AI surfaces follow Generation AI kit §13 and §16. Both layers share one rule: **specific, honest, dry.**
 
+Product locale is locked in `design-plan.md`. These examples are English because the agent layer is English. When the product locale is Serbian, use **ekavian only** — not ijekavian, not ikavian. Do not invent a second site language.
+
 ## Register
 
 | Surface | Tone | Example |
 |---|---|---|
-| Hero, section titles, manifesto lines | Declarative. Closer to a statement than a pitch. | “Cijene na jednom mjestu. Bez ukrasa.” |
-| Body | Plain. One idea per block. 55–75 characters. | “Usporedi stavke prije nego što platiš.” |
-| UI labels | Nouns for destinations, verbs for actions. | “Cjenik”, “Spremi izmjenu” |
-| Errors | Name the problem and the next step. | “Email nije valjan. Unesi adresu u obliku ime@domena.hr.” |
+| Hero, section titles, manifesto lines | Declarative. Closer to a statement than a pitch. | “Prices in one place. No ornament.” |
+| Body | Plain. One idea per block. 55–75 characters. | “Compare the line items before you pay.” |
+| UI labels | Nouns for destinations, verbs for actions. | “Price list”, “Save change” |
+| Errors | Name the problem and the next step. | “That email is not valid. Use the form name@domain.com.” |
 | Data | Source or label. Never invent precision. | Visible `SAMPLE DATA` if illustrative. |
 
 ## Required
@@ -18,7 +20,7 @@ Brand and marketing surfaces follow Dutch Design §2.3. UI chrome, forms, errors
 - Specific over vague.
 - Honest over sensational.
 - One dominant intention per view.
-- Consequence stated in confirmations. Not “Jesi li siguran?”.
+- Consequence stated in confirmations. Not “Are you sure?”.
 
 ## Forbidden
 

@@ -6,6 +6,14 @@ Dizajn-vođeni veb sajt. Još nije brendiran proizvod: ovo je **operativni siste
 
 Repozitorijum: [ivicajovanovic/leteci-holandjanin](https://github.com/ivicajovanovic/leteci-holandjanin)
 
+## Jezik
+
+| Sloj | Jezik |
+|---|---|
+| Zakon, skillovi, šabloni, komentari u kodu | Engleski. Dva izvorna zakona se ne prevode. |
+| Ovaj README | Srpski, **ekavica** |
+| Copy na sajtu | Jedan locale, posle brifa. Ako je srpski: samo ekavica. |
+
 ---
 
 ## O čemu se radi

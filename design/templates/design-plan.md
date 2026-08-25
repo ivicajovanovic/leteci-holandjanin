@@ -11,6 +11,7 @@ Copy to `/design-plan.md` and fill **before** any production HTML, CSS, or compo
 - Domain:
 - Primary user decision:
 - Default intensity by journey stage: discovery `expressive` | task `quiet` | …
+- Product locale: `en` | `sr` (ekavian) | other (one only). Agent/law docs stay English.
 
 ## Font pairing (exactly one)
 

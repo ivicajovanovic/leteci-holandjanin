@@ -2,6 +2,13 @@
 
 Design-led Astro site. Two source files are law. Adjunct docs in `design/` are upgrades, not a third aesthetic.
 
+## Language
+
+- Law, skills, templates, code comments: **English**. Do not translate `design/sources/`.
+- `README.md`: Serbian (ekavian), for the owner.
+- Product UI locale: locked in `design-plan.md`. Until then, do not assume `hr` / `sr` / `en`.
+- Serbian product copy, if chosen: **ekavian only**. See `design/LANGUAGE.md`.
+
 ## Read order (every session that produces UI or copy)
 
 1. `design-plan.md` — if status is not `LOCKED`, do not implement visual identity. Scaffold and content architecture only.

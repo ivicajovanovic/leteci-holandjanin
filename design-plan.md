@@ -11,6 +11,7 @@ Fill from `design/templates/design-plan.md` after the site brief arrives.
 - Domain: _awaiting brief_
 - Primary user decision: _awaiting brief_
 - Default intensity by journey stage: _awaiting brief_
+- Product locale: _awaiting brief_ (one language; if Serbian, ekavian)
 
 ## Font pairing
 
