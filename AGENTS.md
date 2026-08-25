@@ -5,7 +5,7 @@ Start here after `HANDOFF.md`. Design-led Astro site. Two source files are law. 
 ## Language
 
 - Law, skills, templates, code comments: **English**. Do not translate `design/sources/`.
-- `README.md`: Serbian (ekavian), for the owner.
+- `README.md` and `prompt.md`: Serbian (ekavian), for the owner. The paste block in `prompt.md` is English.
 - Product UI locale: locked in `design-plan.md`. Until then, do not assume `hr` / `sr` / `en`.
 - Serbian product copy, if chosen: **ekavian only**. See `design/LANGUAGE.md`.
 

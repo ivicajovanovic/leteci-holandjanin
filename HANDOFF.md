@@ -2,6 +2,8 @@
 
 You are an LLM coding agent landing in **Leteći Holanđanin** (`leteci-holandjanin`). This file is the session start. Read it before changing anything. Then follow `AGENTS.md`.
 
+The owner starts a new chat from `prompt.md` (root). If they pasted that wrapper, obey its `THIS SESSION` mode. If they did not, still follow this file — do not skip the freeze.
+
 If `design-plan.md` is not `LOCKED`, freeze visual identity. The owner will send the site brief; lock the plan before any production UI.
 
 Remote: https://github.com/ivicajovanovic/leteci-holandjanin  
@@ -63,7 +65,7 @@ See `design/LANGUAGE.md`.
 | Layer | Language |
 |---|---|
 | Law, `AGENTS.md`, skills, templates, this file, code comments | English. Never translate `design/sources/`. |
-| `README.md` | Serbian, ekavian (owner) |
+| `README.md`, `prompt.md` | Serbian, ekavian (owner). Paste block in `prompt.md` is English. |
 | Product UI | One locale, locked in `design-plan.md`. If Serbian: **ekavian only** — not ijekavian, not ikavian. |
 
 The holding page is `lang="sr"` because it is owner-facing, like the README. That is **not** the product locale.

@@ -6,14 +6,15 @@ Dizajn-vođeni veb sajt. Još nije brendiran proizvod: ovo je **operativni siste
 
 Repozitorijum: [ivicajovanovic/leteci-holandjanin](https://github.com/ivicajovanovic/leteci-holandjanin)
 
-Za agenta (engleski): [`HANDOFF.md`](HANDOFF.md).
+Za agenta (engleski): [`HANDOFF.md`](HANDOFF.md).  
+Nova sesija: kopiraj šablon iz [`prompt.md`](prompt.md).
 
 ## Jezik
 
 | Sloj | Jezik |
 |---|---|
 | Zakon, skillovi, šabloni, komentari u kodu | Engleski. Dva izvorna zakona se ne prevode. |
-| Ovaj README | Srpski, **ekavica** |
+| Ovaj README i `prompt.md` | Srpski, **ekavica**. Unutrašnji blok za paste je engleski. |
 | Copy na sajtu | Jedan locale, posle brifa. Ako je srpski: samo ekavica. |
 
 ---
@@ -89,6 +90,7 @@ Kodiranje preko Cursor agenta nije opciono ukrašavanje. `AGENTS.md` i `.cursor/
 ```text
 design/sources/     dva nepromenljiva zakona
 design/             glas, intenzitet, ševron, provenance, konflikti
+prompt.md           šablon prvog prompta za novu sesiju
 design-plan.md      katanac projekta (sada prazan)
 docs/checklists/    a11y, CWV, preflight, Dutch enforcement
 docs/specs/         brifovi stranica posle brifa sajta
@@ -118,4 +120,4 @@ npm run ci       # fence + check + build (isto radi GitHub Actions)
 
 ## Sledeći korak
 
-Pošalji brif sajta. Posle toga se `design-plan.md` zaključava, pa se tek onda grade stranice. Do tada tokeni smeju da nose samo crno, belo, strukturno sivo, kvadratne uglove i overshoot easing.
+Nova agentska sesija počinje iz [`prompt.md`](prompt.md), ne iz slobodnog „uradi sajt“. Pošalji brif sajta (polja su u tom šablonu, režim `LOCK_PLAN`). Posle toga se `design-plan.md` zaključava, pa se tek onda grade stranice. Do tada tokeni smeju da nose samo crno, belo, strukturno sivo, kvadratne uglove i overshoot easing.
