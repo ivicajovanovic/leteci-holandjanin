@@ -25,4 +25,4 @@ description: Orchestrates design-led Astro implementation for this repo. Use whe
 
 1. `npm run fence`
 2. `docs/checklists/design-preflight.md`, `dutch-enforcement.md`, `a11y-wcag-22.md`, `cwv-astro.md`
-3. Imitate `docs/canon/this-is.html` / `this-is.png` — not a generic card layout.
+3. Match `public/dutch-1.png`, `dutch-2.png`, `dutch-3.png`. Do not invent a substitute canon.

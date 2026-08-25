@@ -38,7 +38,7 @@ Until `design-plan.md` is `LOCKED` you must **not** pick identity or add product
 
 Owner will send the **site brief** later. First action after the brief: fill and lock `design-plan.md` from `design/templates/design-plan.md`. Then page briefs in `docs/specs/`. Then UI.
 
-Method canon (imitate this, not a template site): `docs/canon/this-is.html` and `docs/canon/this-is.png`. Bans: `docs/canon/THIS-IS-NOT.md`.
+Golden visual examples (owner-made, PNG): `public/dutch-1.png`, `public/dutch-2.png`, `public/dutch-3.png`. Look at them with vision. Do not invent a substitute fragment. Do not treat them as product pages.
 
 ---
 
@@ -64,7 +64,7 @@ The holding page is `lang="sr"` because it is owner-facing, like the README. Tha
 4. `design/sources/anti-slop-dutch-design.md` (form)
 5. `design/sources/gen-ai-web-design-style-kit.md` (behavior)
 6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as needed
-7. `docs/canon/this-is.html` (and `this-is.png` if you can see images)
+7. `public/dutch-1.png`, `public/dutch-2.png`, `public/dutch-3.png` (vision; owner-made)
 8. Project skill: `.cursor/skills/design-led-build/SKILL.md`
 
 ---
@@ -95,7 +95,7 @@ src/components/
   islands/          client:* only
 src/styles/tokens/  black / white / structural gray only; accent and type unlocked
 src/content/        collections (holding entries only, for now)
-docs/canon/         method fragment to imitate
+public/             dutch-1.png, dutch-2.png, dutch-3.png (golden examples, owner-made)
 .cursor/            rules and skills
 ```
 
@@ -128,7 +128,7 @@ Do not leave a leftover process on 4321.
 4. Implement Astro-first. Islands only with a reason.
 5. Run the four checklists. Do not claim Core Web Vitals without a measurement.
 
-There is a method canon in `docs/canon/`. Imitate that fragment. Do not substitute a generic Awwwards clone. Execute the locked plan against the Dutch forbidden/mandatory tables. CI must stay green.
+Look at `public/dutch-1.png`, `dutch-2.png`, `dutch-3.png`. Do not invent a replacement canon. Execute the locked plan against those frames and the Dutch forbidden/mandatory tables. CI must stay green.
 
 ---
 

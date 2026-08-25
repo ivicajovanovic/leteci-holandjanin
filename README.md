@@ -91,8 +91,8 @@ design/sources/     dva nepromenljiva zakona
 design/             glas, intenzitet, ševron, provenance, konflikti
 design-plan.md      katanac projekta (sada prazan)
 docs/checklists/    a11y, CWV, preflight, Dutch enforcement
-docs/canon/         kanonski fragment (ovo jeste / ovo nije)
 docs/specs/         brifovi stranica posle brifa sajta
+public/             dutch-1.png, dutch-2.png, dutch-3.png (zlatni primeri)
 src/pages/          rute
 src/layouts/        RootLayout
 src/styles/tokens/  crno / belo / sivo; akcent i tip otključani

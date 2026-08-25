@@ -111,7 +111,6 @@ function planStatus() {
 function shouldScan(rel) {
   if (rel.startsWith('src/')) return true;
   if (rel.startsWith('public/')) return true;
-  if (rel === 'docs/canon/this-is.html') return true;
   return false;
 }
 
