@@ -79,7 +79,7 @@ The holding page is `lang="sr"` because it is owner-facing, like the README. Tha
 3. `design/CONFLICTS.md`
 4. `design/sources/anti-slop-dutch-design.md` (form)
 5. `design/sources/gen-ai-web-design-style-kit.md` (behavior)
-6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md` as needed
+6. `design/voice.md`, `design/intensity-modes.md`, `design/chevron-system.md`, `design/image-treatment.md`, `design/motion-choreography.md`, `design/responsive-object.md`, `design/collage.md` as needed
 7. `public/dutch-1.png`, `public/dutch-2.png`, `public/dutch-3.png` (vision; owner-made)
 8. Project skill: `.cursor/skills/design-led-build/SKILL.md`
 

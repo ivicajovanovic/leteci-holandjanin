@@ -82,6 +82,19 @@ One system that produces rupture (frame that responds, block that restamps, word
 - Easing: `cubic-bezier(0.34, 1.56, 0.64, 1)` unless a documented spring API is used
 - Where spring may play: Dumbar/DEPT surfaces and UI state feedback only
 - Reduced-motion behavior: strip spatial motion, keep state feedback
+- Default stagger between sequenced elements: `40ms`–`80ms` (see `design/motion-choreography.md`)
+
+## Image treatment
+
+See `design/image-treatment.md`.
+
+Owner prepares all raster with print grain before delivery. Agent crops and places into the packing grid. Agent does not apply CSS filters to simulate print grain.
+
+## Collage
+
+See `design/collage.md`.
+
+Collage is a Classic Dumbar tool. Owner composes layers and states blend intent. Agent implements with CSS Grid overlap, `mix-blend-mode`, and `clip-path`. No `opacity < 1` blending, no gradient overlays, ≤3 layers.
 
 ## State machines
 
